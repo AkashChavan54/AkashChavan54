@@ -28,44 +28,59 @@ PROFILE = {
     "login": "AkashChavan54",
     "name": "Akash Chavan",
     "intro": [
-        "I build the low-latency C++ systems that carry",
-        "an order from signal to exchange.",
+        "I build trading systems for commodity futures:",
+        "strategies in C++, risk tools in Python and C#.",
     ],
-    "where": "Quant and infra developer in Mumbai. IIT Kanpur, 2023.",
+    "where": [
+        "Senior quant developer at Greenland Investment Management.",
+        "Mumbai. IIT Kanpur CSE, 2023.",
+    ],
     # since, order, side, status, state (filled | working | partial | rejected)
     "blotter": [
+        ("2021", "Python developer intern, Innovaccer (return offer)", "buy", "filled", "filled"),
         ("2023", "B.Tech in Computer Science, IIT Kanpur", "buy", "filled", "filled"),
-        ("Jul 2023", "Quant developer, trading infrastructure", "buy", "working", "working"),
-        ("daily", "C++17 on Linux, with MySQL underneath", "buy", "working", "working"),
-        ("always", "Markets, and trading them", "buy", "partly filled", "partial"),
+        ("Jul 2023", "Senior quant developer, Greenland", "buy", "working", "working"),
+        ("2025", "Tech Trailblazer award", "buy", "filled", "filled"),
+        ("daily", "C++, Python, C#, SQL and the FIX protocol", "buy", "working", "working"),
         ("tonight", "Eight hours of sleep", "buy", "rejected by risk check", "rejected"),
     ],
     # slug (file name), title, description, footer note, colour key
     "focus": [
-        ("orders", "Order management",
-         "Taking an order from a strategy's decision to a working order "
-         "on the exchange, and tracking every state in between.",
-         "C++17, state machines", "bid"),
-        ("risk", "Pre-trade risk",
-         "The checks every order has to clear before it leaves the box: "
-         "limits, positions and sanity, all in the hot path.",
-         "C++17", "ask"),
-        ("routing", "Exchange connectivity",
-         "Per-exchange order adapters and routing, including orders "
-         "that cross servers and venues.",
-         "C++17, Linux networking", "accent"),
-        ("threads", "Threading and latency",
-         "Deciding which thread owns which step, and keeping the "
-         "path from signal to wire short.",
-         "C++17, Linux", "bid"),
-        ("storage", "Persistence and replication",
-         "Every order written down, then consolidated from many "
-         "servers into one view.",
-         "MySQL, multi-source replication", "ask"),
-        ("recovery", "Crash recovery",
-         "What the system does after a restart: rebuild state, "
-         "reconcile with the exchange, carry on.",
-         "C++17, MySQL", "accent"),
+        ("risk", "Realtime risk monitor",
+         "Live orders, P&L, cash and margins in one desk view, with "
+         "alerts on margin breaches and negative cash balances.",
+         "Python, C#, FIX 4.4 and 4.2", "ask"),
+        ("strategies", "Commodity strategies",
+         "Multi-leg futures and ETF strategies across seven commodities, "
+         "from gold and crude oil to iron ore and wheat.",
+         "C++, low latency", "bid"),
+        ("status", "Market status framework",
+         "One consistent model for pre-open, open, halted and "
+         "circuit-breaker states across five exchanges.",
+         "ICE, Euronext, CME, LME, SGX", "accent"),
+        ("volume", "Volume profiler",
+         "Predicts daily and next-minute volume from recent, historical "
+         "and seasonal patterns, to get orders filled better.",
+         "Python", "bid"),
+        ("backtest", "Backtesting framework",
+         "Replays market data to replicate live production models, "
+         "verifies every trade and alerts on anything odd.",
+         "Python", "ask"),
+        ("replication", "Order data replication",
+         "Realtime orders from every trading location, consolidated "
+         "into one lossless database.",
+         "MySQL multi-source replication", "accent"),
+    ],
+    # Same shape as "focus": things built outside work.
+    "projects": [
+        ("simulator", "Exchange and trading simulator",
+         "A multiplayer exchange: FIFO matching engine, separate order "
+         "and market-data channels, and a live trading screen with P&L.",
+         "Self project, Python", "bid"),
+        ("options", "Options scalping strategy",
+         "Scalps Indian index options on volume and open-interest shifts. "
+         "Backtested at 18% CAGR, Sharpe 2.85, 5.9% max drawdown.",
+         "Self project, Python, DuckDB, KiteConnect", "ask"),
     ],
     "pipeline": ["signal", "risk check", "route", "exchange", "fill"],
 }
@@ -127,7 +142,8 @@ def hero(t, book):
     out = [f'<text x="6" y="128" class="serif t" font-size="92" letter-spacing="-1.5">{escape(p["name"])}</text>']
     for i, line in enumerate(p["intro"]):
         out.append(f'<text x="8" y="{200 + i * 38}" class="sans t" font-size="27">{escape(line)}</text>')
-    out.append(f'<text x="8" y="304" class="sans m" font-size="21">{escape(p["where"])}</text>')
+    for i, line in enumerate(p["where"]):
+        out.append(f'<text x="8" y="{300 + i * 30}" class="sans m" font-size="21">{escape(line)}</text>')
 
     # Ladder geometry
     px, row, top = 946, 30, 24          # price column centre, row pitch, first row
@@ -165,7 +181,7 @@ def hero(t, book):
     .last{animation:print 3.2s ease-in-out infinite}
     @keyframes print{0%,100%{opacity:1}50%{opacity:.55}}
     """
-    label = f'{p["name"]}. {" ".join(p["intro"])} {p["where"]}'
+    label = f'{p["name"]}. {" ".join(p["intro"])} {" ".join(p["where"])}'
     return svg(1200, 372, t, "\n".join(out), css, label)
 
 
@@ -451,7 +467,7 @@ def main():
             "market": market(t, book),
             "buy": button(t, "buy", book), "sell": button(t, "sell", book),
         }
-        for slug, name, desc, note, key in PROFILE["focus"]:
+        for slug, name, desc, note, key in PROFILE["focus"] + PROFILE["projects"]:
             files[f"card-{slug}"] = card(t, name, desc, note, key)
         stats_path = ASSETS / f"stats-{theme}.svg"
         if data or not stats_path.exists():
