@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 224" width="600" height="224" role="img" aria-label="Pre-trade risk: The checks every order has to clear before it leaves the box: limits, positions and sanity, all in the hot path.">
+<style>
+    .serif{font-family:'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif} .sans{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif} .mono{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace}
+    .t{fill:#E9E4D8} .m{fill:#8D96A5}
+    .bid{fill:#2FBF9F} .ask{fill:#F0668A} .acc{fill:#F4D35E}
+    .rule{stroke:#2A313C;stroke-width:1}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<line class="rule" x1="8" y1="14" x2="592" y2="14"/>
+<rect x="8" y="12" width="72" height="5" fill="#F0668A"/>
+<text x="8" y="66" class="serif t" font-size="34">Pre-trade risk</text>
+<text x="8" y="104" class="sans m" font-size="20">The checks every order has to clear before it leaves the</text>
+<text x="8" y="132" class="sans m" font-size="20">box: limits, positions and sanity, all in the hot path.</text>
+<text x="8" y="206" class="mono t" font-size="16">C++17</text>
+</svg>

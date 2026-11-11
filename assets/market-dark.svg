@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 372" width="1200" height="372" role="img" aria-label="Live tape of visitor orders. Last price 100.00, 0 orders so far.">
+<style>
+    .serif{font-family:'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif} .sans{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif} .mono{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace}
+    .t{fill:#E9E4D8} .m{fill:#8D96A5}
+    .bid{fill:#2FBF9F} .ask{fill:#F0668A} .acc{fill:#F4D35E}
+    .rule{stroke:#2A313C;stroke-width:1}
+    
+    .fresh{animation:fresh 2.6s ease-out infinite}
+    @keyframes fresh{0%{opacity:.35}30%,100%{opacity:1}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<text x="8" y="40" class="serif t" font-size="34">Trade against my book</text>
+<text x="1192" y="38" text-anchor="end" class="mono m" font-size="17">last 100.00, 0 orders so far</text>
+<line class="rule" x1="0" y1="60" x2="1200" y2="60"/>
+<text x="8" y="90" class="mono m" font-size="16">time</text>
+<text x="170" y="90" class="mono m" font-size="16">trader</text>
+<text x="410" y="90" class="mono m" font-size="16">side</text>
+<text x="480" y="90" class="mono m" font-size="16">price</text>
+<text x="560" y="90" class="mono m" font-size="16">status</text>
+<text x="8" y="140" class="sans t" font-size="22">No orders yet. Yours can be the first print on the tape.</text>
+<line class="rule" x1="870" y1="76" x2="870" y2="320"/>
+<text x="900" y="90" class="mono m" font-size="16">top traders</text>
+<text x="1100" y="90" text-anchor="end" class="mono m" font-size="16">lots</text>
+<text x="1192" y="90" text-anchor="end" class="mono m" font-size="16">p&amp;l</text>
+<text x="900" y="128" class="sans m" font-size="19">Nobody has a position yet.</text>
+<text x="8" y="356" class="sans m" font-size="18">Risk checks: 10 orders a day, 5 lots either way, prices between 90 and 110. Times are UTC.</text>
+</svg>

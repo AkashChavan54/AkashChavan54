@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 86" width="1200" height="86" role="img" aria-label="An order&#x27;s path: signal, risk check, route, exchange, fill.">
+<style>
+    .serif{font-family:'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif} .sans{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif} .mono{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace}
+    .t{fill:#E9E4D8} .m{fill:#8D96A5}
+    .bid{fill:#2FBF9F} .ask{fill:#F0668A} .acc{fill:#F4D35E}
+    .rule{stroke:#2A313C;stroke-width:1}
+    
+    .node{opacity:0;animation:hit 7.0s linear infinite}
+    @keyframes hit{0%{opacity:0}2%{opacity:1}22%{opacity:0}100%{opacity:0}}
+    .run{opacity:0;animation:run 7.0s linear infinite}
+    @keyframes run{0%{transform:translateX(0);opacity:1}80%{transform:translateX(1080px);opacity:1}
+      81%,100%{transform:translateX(1080px);opacity:0}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<line class="rule" x1="60" y1="30" x2="1140" y2="30"/>
+<circle cx="60" cy="30" r="6" fill="#2A313C"/><circle class="acc node" cx="60" cy="30" r="6" style="animation-delay:0.00s"/><text x="60" y="66" text-anchor="middle" class="mono m" font-size="17">signal</text>
+<circle cx="330" cy="30" r="6" fill="#2A313C"/><circle class="acc node" cx="330" cy="30" r="6" style="animation-delay:1.40s"/><text x="330" y="66" text-anchor="middle" class="mono m" font-size="17">risk check</text>
+<circle cx="600" cy="30" r="6" fill="#2A313C"/><circle class="acc node" cx="600" cy="30" r="6" style="animation-delay:2.80s"/><text x="600" y="66" text-anchor="middle" class="mono m" font-size="17">route</text>
+<circle cx="870" cy="30" r="6" fill="#2A313C"/><circle class="acc node" cx="870" cy="30" r="6" style="animation-delay:4.20s"/><text x="870" y="66" text-anchor="middle" class="mono m" font-size="17">exchange</text>
+<circle cx="1140" cy="30" r="6" fill="#2A313C"/><circle class="acc node" cx="1140" cy="30" r="6" style="animation-delay:5.60s"/><text x="1140" y="66" text-anchor="middle" class="mono m" font-size="17">fill</text>
+<circle class="acc run" cx="60" cy="30" r="4"/>
+</svg>

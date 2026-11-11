@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 372" width="1200" height="372" role="img" aria-label="Akash Chavan. I build the low-latency C++ systems that carry an order from signal to exchange. Quant and infra developer in Mumbai. IIT Kanpur, 2023.">
+<style>
+    .serif{font-family:'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif} .sans{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif} .mono{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace}
+    .t{fill:#1B2330} .m{fill:#5E6875}
+    .bid{fill:#0E8F78} .ask{fill:#C93A63} .acc{fill:#A87B00}
+    .rule{stroke:#D5DAE1;stroke-width:1}
+    
+    .bar{transform-box:fill-box;animation:breathe 5s ease-in-out infinite}
+    .a{transform-origin:left center} .b{transform-origin:right center}
+    @keyframes breathe{0%,100%{transform:scaleX(1)}50%{transform:scaleX(var(--s))}}
+    .last{animation:print 3.2s ease-in-out infinite}
+    @keyframes print{0%,100%{opacity:1}50%{opacity:.55}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<text x="6" y="128" class="serif t" font-size="92" letter-spacing="-1.5">Akash Chavan</text>
+<text x="8" y="200" class="sans t" font-size="27">I build the low-latency C++ systems that carry</text>
+<text x="8" y="238" class="sans t" font-size="27">an order from signal to exchange.</text>
+<text x="8" y="304" class="sans m" font-size="21">Quant and infra developer in Mumbai. IIT Kanpur, 2023.</text>
+<rect class="ask bar a" x="1002" y="24" width="182" height="20" rx="2" style="--s:0.62;animation-duration:4.2s;animation-delay:-0.0s"/><text x="946" y="40" text-anchor="middle" class="mono m" font-size="17">100.25</text>
+<rect class="ask bar a" x="1002" y="54" width="150" height="20" rx="2" style="--s:0.76;animation-duration:5.1s;animation-delay:-1.3s"/><text x="946" y="70" text-anchor="middle" class="mono m" font-size="17">100.20</text>
+<rect class="ask bar a" x="1002" y="84" width="112" height="20" rx="2" style="--s:0.90;animation-duration:6.0s;animation-delay:-2.6s"/><text x="946" y="100" text-anchor="middle" class="mono m" font-size="17">100.15</text>
+<rect class="ask bar a" x="1002" y="114" width="78" height="20" rx="2" style="--s:0.69;animation-duration:6.9s;animation-delay:-3.9s"/><text x="946" y="130" text-anchor="middle" class="mono m" font-size="17">100.10</text>
+<rect class="ask bar a" x="1002" y="144" width="44" height="20" rx="2" style="--s:0.83;animation-duration:7.8s;animation-delay:-5.2s"/><text x="946" y="160" text-anchor="middle" class="mono m" font-size="17">100.05</text>
+<line class="rule" x1="700" y1="192" x2="894" y2="192"/>
+<line class="rule" x1="998" y1="192" x2="1192" y2="192"/>
+<text x="946" y="199" text-anchor="middle" class="mono acc last" font-size="20" font-weight="600">100.00</text>
+<rect class="bid bar b" x="840" y="218" width="50" height="20" rx="2" style="--s:0.66;animation-duration:5.1s;animation-delay:-0.0s"/><text x="946" y="234" text-anchor="middle" class="mono m" font-size="17">99.95</text>
+<rect class="bid bar b" x="804" y="248" width="86" height="20" rx="2" style="--s:0.84;animation-duration:5.8s;animation-delay:-1.7s"/><text x="946" y="264" text-anchor="middle" class="mono m" font-size="17">99.90</text>
+<rect class="bid bar b" x="770" y="278" width="120" height="20" rx="2" style="--s:0.72;animation-duration:6.5s;animation-delay:-3.4s"/><text x="946" y="294" text-anchor="middle" class="mono m" font-size="17">99.85</text>
+<rect class="bid bar b" x="738" y="308" width="152" height="20" rx="2" style="--s:0.90;animation-duration:7.2s;animation-delay:-5.1s"/><text x="946" y="324" text-anchor="middle" class="mono m" font-size="17">99.80</text>
+<rect class="bid bar b" x="704" y="338" width="186" height="20" rx="2" style="--s:0.78;animation-duration:7.9s;animation-delay:-6.8s"/><text x="946" y="354" text-anchor="middle" class="mono m" font-size="17">99.75</text>
+</svg>

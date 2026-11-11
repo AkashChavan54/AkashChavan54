@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 304" width="1200" height="304" role="img" aria-label="Order blotter: B.Tech in Computer Science, IIT Kanpur, filled; Quant developer, trading infrastructure, working; C++17 on Linux, with MySQL underneath, working; Markets, and trading them, partly filled; Eight hours of sleep, rejected by risk check">
+<style>
+    .serif{font-family:'Iowan Old Style','Palatino Linotype',Palatino,'Book Antiqua',Georgia,serif} .sans{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Helvetica,Arial,sans-serif} .mono{font-family:ui-monospace,SFMono-Regular,'SF Mono',Menlo,Consolas,'Liberation Mono',monospace}
+    .t{fill:#1B2330} .m{fill:#5E6875}
+    .bid{fill:#0E8F78} .ask{fill:#C93A63} .acc{fill:#A87B00}
+    .rule{stroke:#D5DAE1;stroke-width:1}
+    
+    .pulse{animation:pulse 2.4s ease-in-out infinite}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.25}}
+    @media (prefers-reduced-motion:reduce){*{animation:none!important}}</style>
+<text x="8" y="26" class="mono m" font-size="17">since</text>
+<text x="170" y="26" class="mono m" font-size="17">order</text>
+<text x="800" y="26" class="mono m" font-size="17">side</text>
+<text x="910" y="26" class="mono m" font-size="17">status</text>
+<line class="rule" x1="0" y1="42" x2="1200" y2="42"/>
+<text x="8" y="80" class="mono m" font-size="19">2023</text><text x="170" y="80" class="sans t" font-size="23">B.Tech in Computer Science, IIT Kanpur</text><text x="800" y="80" class="mono bid" font-size="19">buy</text><circle class="bid" cx="916" cy="73" r="5"/><text x="932" y="80" class="mono t" font-size="19">filled</text>
+<line class="rule" x1="0" y1="99" x2="1200" y2="99"/>
+<text x="8" y="130" class="mono m" font-size="19">Jul 2023</text><text x="170" y="130" class="sans t" font-size="23">Quant developer, trading infrastructure</text><text x="800" y="130" class="mono bid" font-size="19">buy</text><circle class="acc pulse" cx="916" cy="123" r="5"/><text x="932" y="130" class="mono t" font-size="19">working</text>
+<line class="rule" x1="0" y1="149" x2="1200" y2="149"/>
+<text x="8" y="180" class="mono m" font-size="19">daily</text><text x="170" y="180" class="sans t" font-size="23">C++17 on Linux, with MySQL underneath</text><text x="800" y="180" class="mono bid" font-size="19">buy</text><circle class="acc pulse" cx="916" cy="173" r="5"/><text x="932" y="180" class="mono t" font-size="19">working</text>
+<line class="rule" x1="0" y1="199" x2="1200" y2="199"/>
+<text x="8" y="230" class="mono m" font-size="19">always</text><text x="170" y="230" class="sans t" font-size="23">Markets, and trading them</text><text x="800" y="230" class="mono bid" font-size="19">buy</text><circle class="acc" cx="916" cy="223" r="5"/><text x="932" y="230" class="mono t" font-size="19">partly filled</text>
+<line class="rule" x1="0" y1="249" x2="1200" y2="249"/>
+<text x="8" y="280" class="mono m" font-size="19">tonight</text><text x="170" y="280" class="sans t" font-size="23">Eight hours of sleep</text><text x="800" y="280" class="mono bid" font-size="19">buy</text><circle class="ask" cx="916" cy="273" r="5"/><text x="932" y="280" class="mono t" font-size="19">rejected by risk check</text>
+</svg>
